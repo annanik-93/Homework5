@@ -53,33 +53,29 @@ public class Main {
 
         int monthNumber = 12;
         System.out.println("Задание 5");
-        if (monthNumber > 12 || monthNumber < 1) {
-            System.out.println("Такого месяца не существует");
-        } else {
-            switch (monthNumber) {
-                case 12:
-                case 1:
-                case 2:
-                    System.out.println("Зима");
-                    break;
-                case 3:
-                case 4:
-                case 5:
-                    System.out.println("Весна");
-                    break;
-                case 6:
-                case 7:
-                case 8:
-                    System.out.println("Лето");
-                    break;
-                case 9:
-                case 10:
-                case 11:
-                    System.out.println("Осень");
-                    break;
-                default:
-                    System.out.println("Некорректный номер месяца");
-            }
+        switch (monthNumber) {
+            case 12:
+            case 1:
+            case 2:
+                System.out.println("Зима");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Весна");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("Лето");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("Осень");
+                break;
+            default:
+                System.out.println("Такого месяца не существует (номер должен быть от 1 до 12)");
         }
     }
 }
